@@ -1,0 +1,476 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700|Roboto+Mono&display=swap");
+
+html,
+body {
+  margin: 0;
+  background-color: #ececec;
+  font-family: "Roboto Mono";
+}
+
+a:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #ececec;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+  z-index: 1;
+}
+
+.sticky.shadow {
+  -webkit-box-shadow: 2px -3px 4px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 2px -3px 4px 1px rgba(0, 0, 0, 0.15);
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+  background: #f6f3eb;
+}
+
+header {
+  margin: 0px 100px;
+}
+
+.navbar {
+  font-family: "Roboto Mono";
+}
+
+.navbar .menuToggle {
+  display: none;
+}
+
+.navbar .menuItems {
+  display: contents;
+}
+
+.navbar .menuItems .item {
+  text-decoration: none;
+  font-size: 1em;
+  color: #666666;
+  width: 100%;
+  padding: 3px 10px;
+  position: relative;
+  z-index: 1;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-transition: 0.3s color ease-in-out;
+  transition: 0.3s color ease-in-out;
+}
+
+.navbar .menuItems .item.dropdown-toggle {
+  font-weight: 700;
+}
+
+.navbar .menuItems .item.dropdown-toggle ion-icon {
+  position: relative;
+  top: 5px;
+  right: -15px;
+}
+
+.navbar .menuItems .item.dropdown-toggle::after {
+  display: none;
+}
+
+.navbar .menuItems .item:hover {
+  color: #191919;
+  -webkit-transition: 0.3s color ease-in-out;
+  transition: 0.3s color ease-in-out;
+}
+
+.body.container {
+  padding-top: 50px;
+}
+
+.navbarContainer {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.mainContainer {
+  margin-top: 50px;
+  background: #ececec;
+  background-repeat: no-repeat;
+  background-image: url(./imgs/wave.svg);
+  background-position-y: 385px;
+  background-position-x: left;
+  background-size: cover;
+  font-family: "Roboto";
+}
+
+.mainContainer .wireframe {
+  width: 49vw;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -50px;
+  max-width: 900px;
+}
+
+.mainContainer .heading {
+  margin-top: 130px;
+  padding-left: 50px;
+}
+
+.mainContainer .heading h1 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 3rem;
+}
+
+.mainContainer .heading h5 {
+  font-size: 0.9rem;
+  margin-bottom: 35px;
+  font-family: "Roboto Mono";
+  color: #6d6d6d;
+}
+
+.mainContainer .heading a {
+  text-decoration: none;
+  padding: 7px 20px;
+  outline: none;
+  border: 1px solid #191919;
+  color: #191919;
+  background: #ececec;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.mainContainer .heading a.focus {
+  background: #fff9ea8a;
+  color: #191919;
+  width: 100px;
+}
+
+.controlledContent {
+  max-width: 1050px;
+  margin: auto;
+}
+
+.contentContainer {
+  background: #fff9ea8a;
+  height: 100%;
+}
+
+.contentContainer .featuresBox {
+  border-radius: 15px;
+  background: #ececec;
+  -webkit-box-shadow: 0px 7px 26px #d4d4d4, 0px 9px 26px #eaeaea;
+  box-shadow: 0px 7px 26px #d4d4d4, 0px 9px 26px #eaeaea;
+  text-align: center;
+  position: relative;
+  top: -55px;
+  padding: 0px 15px;
+}
+
+.contentContainer .featuresBox .column {
+  padding: 40px 10px;
+  max-width: 300px;
+}
+
+.contentContainer .featuresBox .column .icon {
+  font-size: 3em;
+}
+
+.contentContainer .featuresBox .column .title {
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.contentContainer .featuresBox .column .description {
+  font-family: "Roboto";
+  color: #4e4e4e;
+}
+
+.contentContainer .sectionTitle {
+  font-family: "Roboto";
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2em;
+  padding-left: 50px;
+  margin: 100px 0px 50px 0;
+  text-align: left;
+}
+
+.features.columns {
+  margin-bottom: 20px;
+}
+
+.features .feature {
+  padding: 40px 20px;
+  background: #fff;
+  font-weight: 500;
+  font-family: "Roboto";
+  font-size: 1.5em;
+  width: 220px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+}
+
+.features .feature .featureIcon {
+  font-size: 2em;
+  margin-bottom: 15px;
+  max-width: 50px;
+}
+
+.features .feature:hover {
+  -webkit-box-shadow: 0 1.2px 1.9px rgba(0, 0, 0, 0.008), 0 2.7px 4.3px rgba(0, 0, 0, 0.011), 0 4.9px 7.7px rgba(0, 0, 0, 0.014), 0 8.2px 12.8px rgba(0, 0, 0, 0.016), 0 13.5px 21.2px rgba(0, 0, 0, 0.019), 0 23.6px 37px rgba(0, 0, 0, 0.022), 0 51px 80px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 1.2px 1.9px rgba(0, 0, 0, 0.008), 0 2.7px 4.3px rgba(0, 0, 0, 0.011), 0 4.9px 7.7px rgba(0, 0, 0, 0.014), 0 8.2px 12.8px rgba(0, 0, 0, 0.016), 0 13.5px 21.2px rgba(0, 0, 0, 0.019), 0 23.6px 37px rgba(0, 0, 0, 0.022), 0 51px 80px rgba(0, 0, 0, 0.03);
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.useCase {
+  min-height: 100px;
+}
+
+.useCase .useCaseTitle {
+  font-size: 1.5em;
+  font-family: "Roboto";
+  text-align: center;
+  font-weight: 500;
+  background: #eceae3;
+  max-height: 130px;
+  padding: 15px 0px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+
+.useCase .useCaseTitle .sub {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-family: "Roboto Mono";
+  white-space: nowrap;
+}
+
+.useCase .useCaseTitle .description {
+  opacity: 0;
+  font-size: 0.8rem;
+  visibility: hidden;
+  display: block;
+  background: #fff;
+  padding: 15px 15px;
+  position: relative;
+  top: -130px;
+  -webkit-transition: 0.1s all ease-in;
+  transition: 0.1s all ease-in;
+  border-radius: 5px;
+  white-space: normal;
+}
+
+.useCase .useCaseTitle .read {
+  font-size: 1em;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.useCase .useCaseTitle .read:hover+.description,
+.useCase .useCaseTitle .read+.description:hover {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: 0.3s all ease-out;
+  transition: 0.3s all ease-out;
+  top: -140px;
+  -webkit-box-shadow: 0 1.2px 1.9px rgba(0, 0, 0, 0.008), 0 2.7px 4.3px rgba(0, 0, 0, 0.011), 0 4.9px 7.7px rgba(0, 0, 0, 0.014), 0 8.2px 12.8px rgba(0, 0, 0, 0.016), 0 13.5px 21.2px rgba(0, 0, 0, 0.019), 0 23.6px 37px rgba(0, 0, 0, 0.022), 0 51px 80px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 1.2px 1.9px rgba(0, 0, 0, 0.008), 0 2.7px 4.3px rgba(0, 0, 0, 0.011), 0 4.9px 7.7px rgba(0, 0, 0, 0.014), 0 8.2px 12.8px rgba(0, 0, 0, 0.016), 0 13.5px 21.2px rgba(0, 0, 0, 0.019), 0 23.6px 37px rgba(0, 0, 0, 0.022), 0 51px 80px rgba(0, 0, 0, 0.03);
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  -webkit-transition-delay: 0.3;
+  transition-delay: 0.3;
+}
+
+.deploy .deployTitle {
+  font-size: 1.5em;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+.deploy .deployStep {
+  margin-top: 10px;
+}
+
+.deploy .deployStep.done {
+  text-align: center;
+}
+
+.deploy a {
+  color: #928155;
+  background: #eceae3;
+  padding: 1px 3px;
+}
+
+.deploy code {
+  display: block;
+  margin: 10px 5px;
+  padding: 15px 10px;
+  background: #eceae3;
+  color: #3b4351;
+}
+
+.deploy code .code {
+  display: inline-block;
+  width: calc(100% - 15px);
+}
+
+.deploy code .copy {
+  display: inline-block;
+  float: right;
+  cursor: pointer;
+}
+
+.statement {
+  text-align: left;
+  padding: 100px 0px 20px 0px;
+}
+
+.statement .contributors {
+  margin: 50px 0px 0px 0px;
+  text-align: center;
+}
+
+.statement a.contribute {
+  display: inline-block;
+  text-decoration: none;
+  background: #eceae3;
+  padding: 10px 15px;
+  margin-top: 10px;
+  color: #3b4351;
+}
+
+.statement a.contributor .badge.avatar::after {
+  background-color: #3b4351;
+  opacity: 0.3;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.statement a.contributor:hover .badge.avatar::after {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  opacity: 1;
+}
+
+.footer {
+  text-align: center;
+  background: #fff9ea8a;
+  padding: 100px 0px 20px 0px;
+}
+
+svg.logo {
+  max-width: 70px;
+  height: 80.17094px;
+  margin: 10px 0;
+  -webkit-transition: 0.2s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: 0.2s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
+}
+
+svg.logo .cls-1 {
+  fill: #d9c285;
+}
+
+svg.logo .cls-2 {
+  fill: #241c17;
+}
+
+svg.logo .cls-2,
+svg.logo .cls-3 {
+  fill-rule: evenodd;
+}
+
+svg.logo .cls-3 {
+  fill: #f8f8f8;
+}
+
+@media only screen and (min-width: 960px) {
+  .wireframe {
+    margin: 0px 0px 100px 0px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .padded {
+    padding: 0px 160px;
+  }
+
+  .wireframe {
+    width: 100% !important;
+    margin: 100px 0px 150px 0px;
+  }
+
+  .features.columns {
+    margin-bottom: 0px;
+  }
+
+  .mainMenu .menuItems {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
+  }
+
+  .mainMenu .menuToggle {
+    display: inline-block;
+    font-size: 2.5em;
+    cursor: pointer;
+  }
+
+  .mainMenu .menuToggle:hover+.menuItems,
+  .mainMenu .menuToggle:hover,
+  .mainMenu .menuToggle+.menuItems:hover+.menuItems,
+  .mainMenu .menuToggle+.menuItems:hover {
+    display: block;
+    top: 65px;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: 1s all ease-out;
+    transition: 1s all ease-out;
+  }
+
+  .mainMenu .menuToggle:hover+.menuItems a,
+  .mainMenu .menuToggle:hover a,
+  .mainMenu .menuToggle+.menuItems:hover+.menuItems a,
+  .mainMenu .menuToggle+.menuItems:hover a {
+    display: block;
+    background: #fff;
+    -webkit-box-shadow: 0 1.2px 1.9px rgba(0, 0, 0, 0.008), 0 2.7px 4.3px rgba(0, 0, 0, 0.011), 0 4.9px 7.7px rgba(0, 0, 0, 0.014), 0 8.2px 12.8px rgba(0, 0, 0, 0.016), 0 13.5px 21.2px rgba(0, 0, 0, 0.019), 0 23.6px 37px rgba(0, 0, 0, 0.022), 0 51px 80px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 1.2px 1.9px rgba(0, 0, 0, 0.008), 0 2.7px 4.3px rgba(0, 0, 0, 0.011), 0 4.9px 7.7px rgba(0, 0, 0, 0.014), 0 8.2px 12.8px rgba(0, 0, 0, 0.016), 0 13.5px 21.2px rgba(0, 0, 0, 0.019), 0 23.6px 37px rgba(0, 0, 0, 0.022), 0 51px 80px rgba(0, 0, 0, 0.03);
+    -webkit-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
+    padding: 10px 25px;
+    margin-bottom: -0.5px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .padded {
+    padding: 0px 95px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .padded {
+    padding: 0px 70px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  header {
+    margin: 0 50px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
